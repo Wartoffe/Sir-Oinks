@@ -11,11 +11,24 @@ private:
     bool hat;
     bool clinging;
     class Pozicija;
+    double vMax;
 
 public:
 
-
-
+    Jump()
+    {
+        if(gr=true)
+        {
+            SirO.Pozicija(x,y+3);
+        }
+    }
+    Sprint()
+    {
+        if(v<vMax)
+        {
+            v=vMax;
+        }
+    }
 
 };
 
@@ -49,6 +62,7 @@ class Turf
 {
 private:
 
+    string ime;
     double maxv;
     bool bouncy;
     bool slip;
@@ -56,6 +70,9 @@ private:
     class Pozicija;
 
 public:
+
+
+    }
 };
 
 class Pozicija
@@ -92,6 +109,9 @@ class Izazov
 {
 private:
 
+    bool predjenaigrica;
+    int hs;
+    class Turf;
 
 };
 
