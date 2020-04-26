@@ -10,9 +10,9 @@ class Level
 private:
 
     int id;
-    class Scena;
-    class Sir_Oinks;
-    class Turf;
+    Scena slvl1;
+    Sir_Oinks player1;
+    Turf lvl1;
     bool izazov;
 
 public:
