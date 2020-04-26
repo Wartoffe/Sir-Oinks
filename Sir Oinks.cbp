@@ -32,6 +32,16 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Dijalog.hpp" />
+		<Unit filename="Izazov.hpp" />
+		<Unit filename="Korisnik.hpp" />
+		<Unit filename="Level.hpp" />
+		<Unit filename="Pozicija.hpp" />
+		<Unit filename="Prodavac.hpp" />
+		<Unit filename="Scena.hpp" />
+		<Unit filename="Sir_Oinks.hpp" />
+		<Unit filename="Trofej.hpp" />
+		<Unit filename="Turf.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
