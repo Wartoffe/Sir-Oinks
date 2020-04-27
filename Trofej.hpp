@@ -8,7 +8,7 @@ class Trofej
 private:
 
     int points;
-    class Pozicija;
+    Pozicija ptrof;
     bool prisutan;
 
 public:
