@@ -14,6 +14,12 @@ public:
         x=xx;
         y=yy;
     }
+
+    void Setp(int nx,int ny)
+    {
+        x+=nx;
+        y+=ny;
+    }
 };
 
 #endif // POZICIJA_HPP_INCLUDED

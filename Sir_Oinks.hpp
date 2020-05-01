@@ -29,12 +29,12 @@ public:
     {
         if(gr==true)
         {
-            Sirp.Pozicija(x,y+3);
+            Sirp.Setp(0,3);
             gr=false;
 
             Sleep(1000);
 
-            Sirp.Pozicija(x,y-3);
+            Sirp.Setp(0,-3);
             gr=true;
         }
     }
