@@ -29,12 +29,17 @@ public:
     {
         if(gr==true)
         {
-            Sirp.Setp(0,3);
+
+            int ytemp=Sirp.Gety();
+            /*temp+=3;
+            Sirp.Sety(ytemp);*/
+
             gr=false;
 
             Sleep(1000);
 
-            Sirp.Setp(0,-3);
+            ytemp-=3;
+            Sirp.Sety(ytemp);
             gr=true;
         }
     }
