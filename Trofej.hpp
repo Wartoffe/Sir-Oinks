@@ -2,6 +2,8 @@
 #define TROFEJ_HPP_INCLUDED
 
 #include "Pozicija.hpp"
+#include "Sir_Oinks.hpp"
+#include "Korisnik.hpp"
 
 class Trofej
 {
@@ -12,6 +14,9 @@ private:
     bool prisutan;
 
 public:
+
+    Trofej(int points,bool prisutan,int xx,int yy,):ptrof(xx,yy)
+
 
 };
 

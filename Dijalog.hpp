@@ -11,6 +11,12 @@ private:
     int karma;
 
 public:
+
+    Dijalog(string di,int k)
+    {
+        dijalog=di;
+        karma=k;
+    }
 };
 
 #endif // DIJALOG_HPP_INCLUDED

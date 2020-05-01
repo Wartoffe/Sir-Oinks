@@ -1,6 +1,6 @@
 #ifndef SIR_OINKS_HPP_INCLUDED
 #define SIR_OINKS_HPP_INCLUDED
-
+#include <windows.h>
 #include "Pozicija.hpp"
 
 class Sir_Oinks
@@ -25,20 +25,23 @@ public:
         vMax=vMax1;
     }
 
-    Jump()
+    void Jump()
     {
-        if(gr=true)
+        if(gr==true)
         {
-            SirO.Pozicija(x,y+3);
+            Sirp.Pozicija(x,y+3);
+            gr=false;
+
+            Sleep(1000);
+
+            Sirp.Pozicija(x,y-3);
+            gr=true;
         }
     }
-    Sprint()
-    {
-        if(v<vMax)
-        {
-            v=vMax;
-        }
-    }
+
+    //Simulacija skoka
+
+
 
 };
 
