@@ -1,1 +1,31 @@
 # depslib dependency file v1.0
+1588374016 source:c:\users\srdja\onedrive\documents\github\sir-oinks\main.cpp
+	<iostream>
+	"Izazov.hpp"
+	"Korisnik.hpp"
+	"Level.hpp"
+	"Pozicija.hpp"
+	"Scena.hpp"
+	"Sir_Oinks.hpp"
+
+1587930297 c:\users\srdja\onedrive\documents\github\sir-oinks\izazov.hpp
+	"Turf.hpp"
+
+1588368738 c:\users\srdja\onedrive\documents\github\sir-oinks\turf.hpp
+	"Pozicija.hpp"
+
+1588373471 c:\users\srdja\onedrive\documents\github\sir-oinks\pozicija.hpp
+
+1588366691 c:\users\srdja\onedrive\documents\github\sir-oinks\korisnik.hpp
+
+1587930764 c:\users\srdja\onedrive\documents\github\sir-oinks\level.hpp
+	"Scena.hpp"
+	"Sir_Oinks.hpp"
+	"Turf.hpp"
+
+1587930320 c:\users\srdja\onedrive\documents\github\sir-oinks\scena.hpp
+
+1588374241 c:\users\srdja\onedrive\documents\github\sir-oinks\sir_oinks.hpp
+	<windows.h>
+	"Pozicija.hpp"
+

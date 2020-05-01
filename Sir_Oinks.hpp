@@ -30,9 +30,9 @@ public:
         if(gr==true)
         {
 
-            int ytemp=Sirp.Gety();
-            /*temp+=3;
-            Sirp.Sety(ytemp);*/
+          int ytemp=Sirp.Gety();
+            ytemp+=3;
+            Sirp.Sety(ytemp);
 
             gr=false;
 
@@ -43,7 +43,6 @@ public:
             gr=true;
         }
     }
-
     //Simulacija skoka
 
 

@@ -15,19 +15,19 @@ public:
         y=yy;
     }
 
-    void Setx(int xx)
+    /*void Setx(int xx)
     {
         x=xx;
-    }
+    }*/
     void Sety(int yy)
     {
         y=yy;
     }
 
-    int Getx()
+    /*int Getx()
     {
         return x;
-    }
+    }*/
     int Gety()
     {
         return y;
