@@ -17,9 +17,9 @@ public:
     Prodavac(string di,int k,int cena1,int Max,int cnum,int p):d1(di,k)
     {
         cena=cena1;
-        int Maxbi=Max;
-        int tbi=cnum;
-        int pare=p;
+        Maxbi=Max;
+        tbi=cnum;
+        pare=p;
     }
 
     void Kupovanje(int brojitema,int pare)

@@ -15,7 +15,11 @@ private:
 
 public:
 
-    Trofej(int points,bool prisutan,int xx,int yy,):ptrof(xx,yy)
+    Trofej(int points1,bool prisutan1,int xx,int yy):ptrof(xx,yy)
+    {
+            points=points1;
+            prisutan=prisutan1;
+    }
 
 
 };

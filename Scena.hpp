@@ -4,8 +4,8 @@
 class Scena
 {
 private:
-    int p, j;
-    int sc[p][j];
+    int p,j;
+    int sc[20][20];
 public:
     Scena(int pp,int jj)
     {

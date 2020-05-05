@@ -1,8 +1,9 @@
 #ifndef TURF_HPP_INCLUDED
 #define TURF_HPP_INCLUDED
 
-#include "Pozicija.hpp"
 
+
+#include "Pozicija.hpp"
 using namespace std;
 
 class Turf
@@ -19,6 +20,7 @@ protected:
 public:
 
     Turf(string ime1, double maxv1, bool bouncy1, bool slip1, bool sharp1, int xx, int yy): pturf(xx,yy)
+    {
 
         ime=ime1;
         maxv=maxv1;
@@ -26,9 +28,11 @@ public:
         slip=slip1;
         sharp=sharp1;
 
-    };
+    }
 
-class Meanturf: public Turf;
+};
+
+class Meanturf: public Turf
 {
 private:
     bool hinder;
@@ -39,5 +43,6 @@ public:
     }
 
 };
+
 
 #endif // TURF_HPP_INCLUDED
