@@ -1,6 +1,8 @@
 #ifndef POZICIJA_HPP_INCLUDED
 #define POZICIJA_HPP_INCLUDED
 
+using namespace std;
+
 class Pozicija
 {
 private:
@@ -38,6 +40,7 @@ public:
         x+=nx;
         y+=ny;
     }*/
+    friend ostream& operator<<(ostream& izlaz, const Pozicija& p);
 };
 
 #endif // POZICIJA_HPP_INCLUDED

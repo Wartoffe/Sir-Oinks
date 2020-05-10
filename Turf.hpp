@@ -29,7 +29,7 @@ public:
         sharp=sharp1;
 
     }
-
+    friend ostream& operator<<(ostream& izlaz, const Turf& t);
 };
 
 class Meanturf: public Turf

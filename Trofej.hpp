@@ -21,7 +21,7 @@ public:
             prisutan=prisutan1;
     }
 
-
+    friend ostream& operator<<(ostream& izlaz, const Trofej& tro);
 };
 
 #endif // TROFEJ_HPP_INCLUDED
