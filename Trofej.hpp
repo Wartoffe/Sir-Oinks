@@ -139,55 +139,6 @@ public:
 
 
 
-/*
-class Zurka{
-private:
-    string povod;
-    vector<Osoba*> osobe;
-public:
-    Zurka(string povod){
-        this->povod=povod;
 
-    }
-    void ispisi(){
-        cout<<povod<<endl;
-    }
-    void dodaj(Osoba* o){
-        osobe.push_back(o);
-
-    }
-    void ispisiOsobe(){
-        cout<<"Povod ove zurke je: "<<povod<<endl;
-        cout<<"Osobe koje prisustvuju zurci su: "<<endl;
-
-        for (auto it=osobe.begin(); it<osobe.end(); it++){
-            (*it)->predstaviSe();
-
-        }
-    }
-    int kolikoJeOsoba(){return osobe.size();}
-
-    int kolikoJeRadnika(){
-        int broj=0;
-        for (auto it=osobe.begin(); it<osobe.end(); it++){
-            if ((*it)->identifikacija()==2)
-                broj++;
-        }
-        return broj;
-
-    }
-    bool izbaci(const Osoba& o){
-        for (auto it=osobe.begin(); it<osobe.end(); it++){
-            if (o.getIme()==(*it)->getIme() && o.getPrezime()==(*it)->getPrezime()){
-                osobe.erase(it);
-                return true;
-            }
-
-        }
-        return false;
-
-    }
-
-};*/
 
 #endif // TROFEJ_HPP_INCLUDED
