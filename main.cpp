@@ -49,7 +49,7 @@ ostream& operator<<(ostream& izlaz, const Pozicija& p){
 
 
 
-/*ostream& operator<<(ostream& izlaz, const Korisnik& k){
+ostream& operator<<(ostream& izlaz, const Korisnik& k){
     izlaz<<"Korisnik"<<endl;
     izlaz<<"highscore :"<<k.hs<<endl;
     izlaz<<"playtime :"<<k.time<<endl;
@@ -59,7 +59,7 @@ ostream& operator<<(ostream& izlaz, const Pozicija& p){
 
     return izlaz;
 
-}*/
+}
 
 int Korisnik::usersnum=0;
 
@@ -86,19 +86,31 @@ void citajTxt(string turf)
 int main()
 {
 
-    Pozicija p1(5,7);
+    /*Pozicija p1(5,7);
     Dijalog d1("Dijalog.txt",0);
     Izazov c1(0,1000,"Wartoffe",4,0,0,0,6,8);
     Korisnik user1(200,27,1,"Wartoffe");
     Level lvl1(1,7,8,0,0,1,0,8,9,20,"Grass",30,0,0,0,19,13,0);
     Prodavac prodava1("Dijalog.txt",0,200,20,20,0);
     Sir_Oinks sir(2,1,0,0,0,0,20);
-    Scena s1(10,8);
-    Trofej trofi1(100,1,8,7);
-    Turf t("Thiccice",4,1,1,0,7,16);
+    Scena s1(10,8);*/
+    Trofej trofi1("Yay",100,1,8,7);
+    Aht trofi2("Nay",200,1,9,1);
+    Aht trofi3("Meh",180,1,6,4);
+    /*Turf t("Thiccice",4,1,1,0,7,16);
     cout<<t;
     citajTxt("Turf.txt.txt");
-    //cout<<user1;
+    cout<<user1;
     cout<<trofi1;
-    cout<<user1.getNumofusers();
+    cout<<user1.getNumofusers();*/
+    Achivements a;
+    a.dodaj(&trofi1);
+    a.dodaj(&trofi2);
+    a.dodaj(&trofi3);
+    //a.ispisiArhive();-ispis
+    a.Searchfor();//ovo je otprilike search/filter(radi)
+
+    a.Kill(trofi2);//-brisanje
+    a.Searchfor();
+    //a.ispisiArhive();
 }
