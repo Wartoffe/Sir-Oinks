@@ -111,6 +111,5 @@ int main()
     a.Searchfor();//ovo je otprilike search/filter(radi)
 
     a.Kill(trofi2);//-brisanje
-    a.Searchfor();
     //a.ispisiArhive();
 }
