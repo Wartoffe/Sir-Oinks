@@ -17,6 +17,14 @@ public:
         dijalog=di;
         karma=k;
     }
+
+    void Saysomethingiamgivinguponyou()
+    {
+        cout<<dijalog<<endl;
+
+
+    }
+
 };
 
 #endif // DIJALOG_HPP_INCLUDED

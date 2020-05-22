@@ -14,12 +14,17 @@ private:
     int pare;
 
 public:
-    Prodavac(string di,int k,int cena1,int Max,int cnum,int p):d1(di,k)
+    Prodavac(string di,int k,int cena1,int Max,int cnum,int p=200):d1(di,k)
     {
         cena=cena1;
         Maxbi=Max;
         tbi=cnum;
         pare=p;
+    }
+
+    int Getpare()
+    {
+        return pare;
     }
 
     void Kupovanje(int brojitema,int pare)
@@ -31,8 +36,12 @@ public:
             Maxbi+=brojitema;
             cena-=(brojitema*cena)/20;
             pare-=brojitema*cena;
+            cout<<"Purches succusess"<<endl;
+            d1.Saysomethingiamgivinguponyou();
 
         }
+        else
+            cout<<"Invalid";
         //simulacija prave radnje sto vise kupujes to vise mozes sledeci put i to vise favorizuje prodavac
     }
 

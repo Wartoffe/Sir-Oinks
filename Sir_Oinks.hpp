@@ -43,10 +43,40 @@ public:
             gr=true;
         }
     }
+
+    void Wmove()
+    {
+        Sirp.Yup();
+    }
+
+    void Amove()
+    {
+        Sirp.Xleft();
+    }
+
+    void Smove()
+    {
+        Sirp.Ydown();
+    }
+
+    void Dmove()
+    {
+        Sirp.Xright();
+    }
+
+
     //Simulacija skoka
+    int Getx()
+    {
+        int xpom=Sirp.Getx();
+        return xpom;
+    }
 
-
-
+    int Gety()
+    {
+        int ypom=Sirp.Gety();
+        return ypom;
+    }
 };
 
 #endif // SIR_OINKS_HPP_INCLUDED

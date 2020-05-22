@@ -12,6 +12,18 @@ public:
         p=pp;
         j=jj;
     }
+
+    int Getp()
+    {
+        return p;
+    }
+
+    int Getj()
+    {
+        return j;
+    }
+
+
 };
 
 #endif // SCENA_HPP_INCLUDED
