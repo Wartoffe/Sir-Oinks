@@ -1,4 +1,6 @@
 Pocetak izvestaja
-Korisnik je odlucio da izabere akaun pod id5
+Korisnik je napravio novi akaunt HolyKarma
 Korisnik pristupa igrici
-Korisnik pobedjuje igricu i ima :200pojena
+Korisnik pobedjuje igricu i ima :200 pojena
+Korisnik pristupa igrici
+Korisnik pobedjuje igricu i ima :400 pojena

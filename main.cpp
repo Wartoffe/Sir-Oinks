@@ -253,7 +253,7 @@ int main()
             if(opstop==2)
             {
                 Izvestaj<<"Korisnik pristupa igrici"<<endl;
-                Sir.Gamestart(0,19);//ne znam kojom silom ovo ne radi ali ostavicu ga jer je to generalna ideja
+                Sir.Gamestart(0,19);
     while(opstop!=4)
     {
 
