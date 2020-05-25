@@ -45,11 +45,6 @@ public:
     }
                     }
 
-    /*int TellifOinks(int x,int y)
-    {
-        if(Sir_Oinks.Getx()==x && Sir_Oinks.Gety()==y){return 1;}
-            return 0;
-    }*/
 
     int Searchfor(int i,int p){
 
