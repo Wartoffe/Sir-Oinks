@@ -25,24 +25,23 @@ public:
         vMax=vMax1;
     }
 
-    void Jump()
+
+    int TellifOinks(int x,int y)
     {
-        if(gr==true)
+        if(Getx()==x && Gety()==y)
         {
-
-          int ytemp=Sirp.Gety();
-            ytemp+=3;
-            Sirp.Sety(ytemp);
-
-            gr=false;
-
-            Sleep(1000);
-
-            ytemp-=3;
-            Sirp.Sety(ytemp);
-            gr=true;
+            return 1;
         }
+
+        return 0;
     }
+
+    void Gamestart(int x,int y)
+    {
+        Sirp.Setx(x);
+        Sirp.Sety(y);
+    }
+
 
     void Wmove()
     {

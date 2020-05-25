@@ -33,6 +33,10 @@ public:
 
     }
 
+    string getIme()
+    {
+        return ime;
+    }
 
 
     void about()
@@ -59,9 +63,20 @@ public:
     friend ostream& operator<<(ostream& izlaz, const Korisnik& k);
 
 
+    void Winpoints()
+    {
+        hs+=200;
+    }
 
+    void Scoreispis()
+    {
+        cout<<hs<<endl;
+    }
 
-
+    int Scoreget()
+    {
+        return hs;
+    }
 
 };
 

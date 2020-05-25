@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1590187451 source:c:\users\srdja\onedrive\documents\github\sir-oinks\main.cpp
+1590440912 source:c:\users\srdja\onedrive\documents\github\sir-oinks\main.cpp
 	<iostream>
 	"Sir_Oinks.hpp"
 	"Pozicija.hpp"
@@ -16,12 +16,12 @@
 1588710428 c:\users\srdja\onedrive\documents\github\sir-oinks\izazov.hpp
 	"Turf.hpp"
 
-1589119288 c:\users\srdja\onedrive\documents\github\sir-oinks\turf.hpp
+1590430378 c:\users\srdja\onedrive\documents\github\sir-oinks\turf.hpp
 	"Pozicija.hpp"
 
-1590138770 c:\users\srdja\onedrive\documents\github\sir-oinks\pozicija.hpp
+1590435980 c:\users\srdja\onedrive\documents\github\sir-oinks\pozicija.hpp
 
-1590160375 c:\users\srdja\onedrive\documents\github\sir-oinks\korisnik.hpp
+1590440150 c:\users\srdja\onedrive\documents\github\sir-oinks\korisnik.hpp
 	<vector>
 	<fstream>
 
@@ -30,15 +30,18 @@
 	"Sir_Oinks.hpp"
 	"Turf.hpp"
 
-1590139955 c:\users\srdja\onedrive\documents\github\sir-oinks\scena.hpp
+1590436474 c:\users\srdja\onedrive\documents\github\sir-oinks\scena.hpp
+	<fstream>
+	<vector>
+	"Sir_Oinks.hpp"
 
-1590138948 c:\users\srdja\onedrive\documents\github\sir-oinks\sir_oinks.hpp
+1590437277 c:\users\srdja\onedrive\documents\github\sir-oinks\sir_oinks.hpp
 	<windows.h>
 	"Pozicija.hpp"
 
 1590187736 c:\users\srdja\onedrive\documents\github\sir-oinks\dijalog.hpp
 
-1590187736 c:\users\srdja\onedrive\documents\github\sir-oinks\prodavac.hpp
+1590435615 c:\users\srdja\onedrive\documents\github\sir-oinks\prodavac.hpp
 	"Dijalog.hpp"
 
 1589651668 c:\users\srdja\onedrive\documents\github\sir-oinks\trofej.hpp

@@ -1,0 +1,4 @@
+Pocetak izvestaja
+Korisnik je odlucio da izabere akaun pod id5
+Korisnik pristupa igrici
+Korisnik pobedjuje igricu i ima :200pojena

@@ -36,6 +36,7 @@ public:
             Maxbi+=brojitema;
             cena-=(brojitema*cena)/20;
             pare-=brojitema*cena;
+            Setpare(pare);
             cout<<"Purches succusess"<<endl;
             d1.Saysomethingiamgivinguponyou();
 
@@ -43,6 +44,11 @@ public:
         else
             cout<<"Invalid";
         //simulacija prave radnje sto vise kupujes to vise mozes sledeci put i to vise favorizuje prodavac
+    }
+
+    void Setpare(int pare1)
+    {
+        pare=pare1;
     }
 
 

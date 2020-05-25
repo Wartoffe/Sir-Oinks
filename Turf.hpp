@@ -29,6 +29,20 @@ public:
         sharp=sharp1;
 
     }
+
+    int Getp()
+    {
+        int g=pturf.Getx();
+        return g;
+    }
+
+    int Geti()
+    {
+        int g=pturf.Gety();
+        return g;
+    }
+
+
     friend ostream& operator<<(ostream& izlaz, const Turf& t);
 };
 

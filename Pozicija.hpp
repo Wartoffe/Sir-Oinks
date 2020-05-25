@@ -44,7 +44,7 @@ public:
 
     void Yup()
     {
-       if(y<20){y+=1;}
+       if(y<19){y+=1;}
 
     }
 
@@ -55,7 +55,7 @@ public:
 
     void Xright()
     {
-       if(x<20){x+=1;}
+       if(x<19){x+=1;}
     }
 
     void Xleft()

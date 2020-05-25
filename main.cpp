@@ -12,6 +12,10 @@
 #include <fstream>
 using namespace std;
 
+ofstream Izvestaj ("Izvestaj.txt");
+
+int x;
+
 int Korisnik::usersnum=0;
 
 int pom=0;
@@ -55,14 +59,37 @@ void Listak(){
 
 
 void Searchfor(){
-                int x;
+
                 cin>>x;
 
                 for (auto it=kori.begin(); it<kori.end(); it++){
-                        if ((*it)->getid()==x)
+                        if ((*it)->getid()==x){
                             (*it)->about();
+                            cout<<"Acc je uspesno pristupljen"<<endl;
+                            Izvestaj<<"Korisnik je odlucio da izabere akaun pod id"<<x<<endl;
+                            return;
+                        }
+        }
+        cout<<"Acc nije uspesno pristupljen >:( molivas unesite pravi acc ili napravite novi";
+                    exit(1);
+    }
+
+
+void Givepoints(){
+
+            int score;
+                for (auto it=kori.begin(); it<kori.end(); it++){
+                        if ((*it)->getid()==x){
+                            (*it)->Winpoints();
+                            (*it)->Scoreispis();
+                            score=(*it)->Scoreget();
+                        }
+
 
         }
+                        Izvestaj<<"Korisnik pobedjuje igricu i ima :"<<score<<" pojena"<<endl;
+
+
     }
 
 
@@ -139,27 +166,32 @@ int main()
 {
 
 
+    if(Izvestaj.is_open())
+    {
+        Izvestaj<<"Pocetak izvestaja"<<endl;
+    }
+
 
 
     Unesiuvektor("Korisnik.txt");
-    Listak();
 
     int opstop=1;
+    Scena s1(19,0);
+    Turf t("Rock",1,1,1,1,5,7);
+    s1.dodaj(&t);
 
-    //Korisnik
-
-    //Level lvl1()
-    //Turf
-    //Pozicija()
-    //Trofej
-
-    Scena s1(1,1);
-    Sir_Oinks Sir(1,1,0,0,0,0,2);
+    Sir_Oinks Sir(1,1,0,0,0,19,2);
     Prodavac p1("Prijatan vam dan",2,30,20,20);
     while(opstop!=0)
     {
         cout<<"1.Napravite novi akaunt"<<endl<<"2.Izaberite akaunt"<<endl<<"0.Da izadjete"<<endl;
         cin>>opstop;
+
+        if(opstop==0)
+            {
+                exit(2);
+            }
+
         if(opstop==1)
         {
             cout<<"Unesite vase korisnicko ime"<<endl;
@@ -173,12 +205,17 @@ int main()
                 File<<imek<<endl;
             }
             File.close();
+
+            Izvestaj<<"Korisnik je napravio novi akaunt "<<imek<<endl;
+
+
         }
 
         else
         {
             cout<<"Unesite redni broj akaunta da bi ga izabrali"<<endl;
             Listak();
+
             Searchfor();
 
 
@@ -187,12 +224,17 @@ int main()
 
         while(opstop!=0)
         {
+
             cout<<"1.Za prodavnicu"<<endl<<"2.Za igricu"<<endl<<"0.za izlaz";
-            //Listak();
+
             cin>>opstop;
+
+
+
             if(opstop==1)
             {
                 cout<<"Dobrodosli u prodavnicu"<<endl;
+                Izvestaj<<"Korisnik je odlucio da udje u prodavnicu"<<endl;
                 cout<<"1.da kupite,0.da izadjete iz cele aplikacije"<<endl;
                 cin>>opstop;
                 if(opstop==1)
@@ -203,16 +245,21 @@ int main()
                     int br;
                     cin>>br;
                     p1.Kupovanje(br,nesto);
+                    Izvestaj<<"Korisnik je pristupio Radnji i pokusao da kupi br itema iz radnje"<<endl;;
 
                 }
 
             }
             if(opstop==2)
             {
+                Izvestaj<<"Korisnik pristupa igrici"<<endl;
+                Sir.Gamestart(0,19);//ne znam kojom silom ovo ne radi ali ostavicu ga jer je to generalna ideja
     while(opstop!=4)
     {
 
-        cout<<"pomeri te se koristeci w,a,s,d"<<endl;
+        cout<<"pomeri te se koristeci w,a,s,d"<<endl<<"cilj je dovesti Sir Oinksa(O)do kraja(X)"<<endl;
+
+        s1.Ispisscene(&Sir);
         char pokret;
         cin>>pokret;
 
@@ -220,30 +267,33 @@ int main()
 
         if(pokret=='w')
         {
-            Sir.Wmove();
+            if(s1.Impass(Sir.Getx(),Sir.Gety()-1)){Sir.Smove();}
+
         }
         if(pokret=='a')
         {
-            Sir.Amove();
+            if(s1.Impass(Sir.Getx()-1,Sir.Gety())){Sir.Amove();}
         }
         if(pokret=='s')
         {
-            Sir.Smove();
+            if(s1.Impass(Sir.Getx(),Sir.Gety()+1)){Sir.Wmove();}
         }
         if(pokret=='d')
         {
-            Sir.Dmove();
+            if(s1.Impass(Sir.Getx()+1,Sir.Gety())){Sir.Dmove();}
         }
         if((Sir.Getx()==s1.Getp())&&(Sir.Gety()==s1.Getj()))
         {
             cout<<"pobedili ste nivo Yay"<<endl;
             opstop=4;
+            Givepoints();
+
         }
     }
             }
         }
     }
-
+    Izvestaj.close();
 
 
 /*
