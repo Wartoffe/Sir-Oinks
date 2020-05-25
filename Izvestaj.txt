@@ -1,6 +1,10 @@
 Pocetak izvestaja
-Korisnik je napravio novi akaunt HolyKarma
-Korisnik pristupa igrici
-Korisnik pobedjuje igricu i ima :200 pojena
-Korisnik pristupa igrici
-Korisnik pobedjuje igricu i ima :400 pojena
+Korisnik je odlucio da izabere akaun pod id5
+Korisnik je odlucio da udje u prodavnicu
+Korisnik je pristupio Radnji i pokusao da kupi br itema iz radnje
+Korisnik je odlucio da udje u prodavnicu
+Korisnik je pristupio Radnji i pokusao da kupi br itema iz radnje
+Korisnik je odlucio da udje u prodavnicu
+Korisnik je pristupio Radnji i pokusao da kupi br itema iz radnje
+Korisnik je odlucio da udje u prodavnicu
+Korisnik je pristupio Radnji i pokusao da kupi br itema iz radnje

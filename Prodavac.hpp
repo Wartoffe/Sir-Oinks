@@ -11,32 +11,29 @@ private:
     int cena;
     int Maxbi;//maksimalni broj itema
     int tbi;//trenutni broj itema
-    int pare;
 
 public:
-    Prodavac(string di,int k,int cena1,int Max,int cnum,int p=200):d1(di,k)
+    Prodavac(string di,int k,int cena1,int Max,int cnum):d1(di,k)
     {
         cena=cena1;
         Maxbi=Max;
         tbi=cnum;
-        pare=p;
+
     }
 
-    int Getpare()
-    {
-        return pare;
-    }
 
-    void Kupovanje(int brojitema,int pare)
+
+    void Kupovanje(int brojitema,int pare1,Korisnik* k)
     {
-        if((pare-(brojitema*cena)>=0)&& tbi>=brojitema)
+        if((pare1-(brojitema*cena)>=0)&& tbi>=brojitema)
         {
 
             tbi-=brojitema;
             Maxbi+=brojitema;
             cena-=(brojitema*cena)/20;
-            pare-=brojitema*cena;
-            Setpare(pare);
+            pare1=brojitema*cena;
+            k->Setpare(pare1);
+            k->about();
             cout<<"Purches succusess"<<endl;
             d1.Saysomethingiamgivinguponyou();
 
@@ -46,10 +43,7 @@ public:
         //simulacija prave radnje sto vise kupujes to vise mozes sledeci put i to vise favorizuje prodavac
     }
 
-    void Setpare(int pare1)
-    {
-        pare=pare1;
-    }
+
 
 
 };

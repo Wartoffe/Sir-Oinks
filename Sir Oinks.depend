@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1590440912 source:c:\users\srdja\onedrive\documents\github\sir-oinks\main.cpp
+1590446409 source:c:\users\srdja\onedrive\documents\github\sir-oinks\main.cpp
 	<iostream>
 	"Sir_Oinks.hpp"
 	"Pozicija.hpp"
@@ -21,7 +21,7 @@
 
 1590435980 c:\users\srdja\onedrive\documents\github\sir-oinks\pozicija.hpp
 
-1590440150 c:\users\srdja\onedrive\documents\github\sir-oinks\korisnik.hpp
+1590446137 c:\users\srdja\onedrive\documents\github\sir-oinks\korisnik.hpp
 	<vector>
 	<fstream>
 
@@ -41,7 +41,7 @@
 
 1590187736 c:\users\srdja\onedrive\documents\github\sir-oinks\dijalog.hpp
 
-1590435615 c:\users\srdja\onedrive\documents\github\sir-oinks\prodavac.hpp
+1590446595 c:\users\srdja\onedrive\documents\github\sir-oinks\prodavac.hpp
 	"Dijalog.hpp"
 
 1589651668 c:\users\srdja\onedrive\documents\github\sir-oinks\trofej.hpp

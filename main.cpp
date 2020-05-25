@@ -234,17 +234,35 @@ int main()
             if(opstop==1)
             {
                 cout<<"Dobrodosli u prodavnicu"<<endl;
+
+
+
+
                 Izvestaj<<"Korisnik je odlucio da udje u prodavnicu"<<endl;
                 cout<<"1.da kupite,0.da izadjete iz cele aplikacije"<<endl;
                 cin>>opstop;
+
                 if(opstop==1)
-                {
-                    int nesto= p1.Getpare();
-                    cout<<"imate:"<<nesto<<endl;;
+
                     cout<<"Unesite broj iteme koji zelite da kupiti(kolicina)"<<endl;
                     int br;
-                    cin>>br;
-                    p1.Kupovanje(br,nesto);
+
+                {
+                    int nesto;
+                    auto it=kori.begin();
+                    for (auto it=kori.begin(); it<kori.end(); it++){
+                        if ((*it)->getid()==x){
+                            nesto=(*it)->Givepare();
+                            cout<<"imate:"<<nesto<<endl;
+                            cin>>br;
+                            p1.Kupovanje(br,nesto,*it);
+
+                        }
+                    }
+
+
+
+
                     Izvestaj<<"Korisnik je pristupio Radnji i pokusao da kupi br itema iz radnje"<<endl;;
 
                 }
@@ -295,69 +313,5 @@ int main()
     }
     Izvestaj.close();
 
-
-/*
-    while(opstop!=0)
-    {
-
-        cout<<"pomeri te se koristeci w,a,s,d"<<endl;
-        char pokret;
-        cin>>pokret;
-
-
-
-        if(pokret=='w')
-        {
-            Sir.Wmove();
-        }
-        if(pokret=='a')
-        {
-            Sir.Amove();
-        }
-        if(pokret=='s')
-        {
-            Sir.Smove();
-        }
-        if(pokret=='d')
-        {
-            Sir.Dmove();
-        }
-        if((Sir.Getx()==s1.Getp())&&(Sir.Gety()==s1.Getj()))
-        {
-            cout<<"pobedili ste nivo Yay"<<endl;
-            opstop=0;
-        }
-    }
-*/
-
-
-
-
-    /*Pozicija p1(5,7);
-    Dijalog d1("Dijalog.txt",0);
-    Izazov c1(0,1000,"Wartoffe",4,0,0,0,6,8);
-    Korisnik user1(200,27,1,"Wartoffe");
-    Level lvl1(1,7,8,0,0,1,0,8,9,20,"Grass",30,0,0,0,19,13,0);
-    Prodavac prodava1("Dijalog.txt",0,200,20,20,0);
-    Sir_Oinks sir(2,1,0,0,0,0,20);
-    Scena s1(10,8);
-    Trofej trofi1("Yay",100,1,8,7);
-    Aht trofi2("Nay",200,1,9,1);
-    Aht trofi3("Meh",180,1,6,4);
-    /*Turf t("Thiccice",4,1,1,0,7,16);
-    cout<<t;*/
-    //citajTxt("Korisnik.txt");
-   /* cout<<user1;
-    cout<<trofi1;
-    cout<<user1.getNumofusers();
-    Achivements a;
-    a.dodaj(&trofi1);
-    a.dodaj(&trofi2);
-    a.dodaj(&trofi3);
-    //a.ispisiArhive();-ispis
-    a.Searchfor();//ovo je otprilike search/filter(radi)
-
-    a.Kill(trofi2);//-brisanje
-    //a.ispisiArhive();*/
 
 }

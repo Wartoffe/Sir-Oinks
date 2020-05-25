@@ -12,6 +12,7 @@ protected:
     int time;
     int levelnum;
     string ime;
+    int pare;
 
     static int usersnum;
     int id;
@@ -21,7 +22,7 @@ public:
 
 
 
-    Korisnik(string ime1,int id1,int hs1=0,int time1=0,int levelnum1=1)
+    Korisnik(string ime1,int id1,int hs1=0,int time1=0,int levelnum1=1,int pare1=200)
     {
         hs=hs1;
         time=time1;
@@ -29,6 +30,7 @@ public:
         ime=ime1;
         id=id1;
         usersnum++;
+        pare=pare1;
 
 
     }
@@ -36,6 +38,11 @@ public:
     string getIme()
     {
         return ime;
+    }
+
+    int Givepare()
+    {
+        return pare;
     }
 
 
@@ -61,6 +68,12 @@ public:
         hs+=pup;
     }
     friend ostream& operator<<(ostream& izlaz, const Korisnik& k);
+
+    void Setpare(int pare1)
+    {
+        pare=pare-pare1;
+
+    }
 
 
     void Winpoints()
