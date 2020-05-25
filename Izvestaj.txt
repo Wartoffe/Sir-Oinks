@@ -1,10 +1,4 @@
 Pocetak izvestaja
 Korisnik je odlucio da izabere akaun pod id5
 Korisnik je odlucio da udje u prodavnicu
-Korisnik je pristupio Radnji i pokusao da kupi br itema iz radnje
-Korisnik je odlucio da udje u prodavnicu
-Korisnik je pristupio Radnji i pokusao da kupi br itema iz radnje
-Korisnik je odlucio da udje u prodavnicu
-Korisnik je pristupio Radnji i pokusao da kupi br itema iz radnje
-Korisnik je odlucio da udje u prodavnicu
-Korisnik je pristupio Radnji i pokusao da kupi br itema iz radnje
+Korisnik je pristupio Radnji i pokusao da kupi1itema iz radnje

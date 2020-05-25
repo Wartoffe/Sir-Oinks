@@ -263,7 +263,7 @@ int main()
 
 
 
-                    Izvestaj<<"Korisnik je pristupio Radnji i pokusao da kupi br itema iz radnje"<<endl;;
+                    Izvestaj<<"Korisnik je pristupio Radnji i pokusao da kupi " <<br<<" itema iz radnje"<<endl;;
 
                 }
 

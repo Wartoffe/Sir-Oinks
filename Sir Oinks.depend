@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1590446409 source:c:\users\srdja\onedrive\documents\github\sir-oinks\main.cpp
+1590447473 source:c:\users\srdja\onedrive\documents\github\sir-oinks\main.cpp
 	<iostream>
 	"Sir_Oinks.hpp"
 	"Pozicija.hpp"
